@@ -1,0 +1,226 @@
+<%- include("partials/header.ejs") %>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Swasthify</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+
+        section {
+            padding: 40px;
+            margin: 20px;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        h2 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 20px;
+            color: #0754f2;
+        }
+
+        p {
+            font-size: 1.2rem;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        .know-button {
+            background-color: #0754f2;
+            color: #fff;
+            border: none;
+            padding: 15px 30px;
+            border-radius: 5px;
+            font-size: 1.2rem;
+            cursor: pointer;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        .know-button:hover {
+            background-color: #0643c5;
+            color: #fff;
+        }
+
+        .button-image {
+            width: 20px;
+            margin-left: 5px;
+        }
+
+        .controller {
+            max-width: 100%;
+            margin-top: 30px;
+        }
+
+        .controller-dark {
+            max-width: 100%;
+            margin-top: 30px;
+        }
+
+        .flex-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .flex-item {
+            flex: 1;
+            max-width: 48%;
+            margin: 10px;
+            text-align: center;
+        }
+
+        .flex-item img {
+            max-width: 100%;
+            border-radius: 10px;
+            margin-bottom: 10px;
+        }
+
+        .card {
+            border: none;
+            border-radius: 10px;
+            overflow: hidden;
+            transition: transform 0.2s;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+        }
+
+        .card img {
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .card-title {
+            font-weight: bold;
+        }
+
+        .card-text {
+            color: #555;
+        }
+
+        .btn-primary {
+            background-color: #0754f2;
+            border-color: #0754f2;
+        }
+
+        .btn-primary:hover {
+            background-color: #0643c5;
+            border-color: #0643c5;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- First Part: Text and Images with Premium Styling -->
+    <section class="container">
+        <div class="row align-items-center">
+            <div class="col-md-6 col-lg-6 col-xs-12 col-sm-12">
+                <div class="col-12 left-side">
+                    <h2>SwasthyaPulse</h2>
+                    <p>A compassionate effort to aid people out of difficult times, we are resolutely committed to providing our users with hospitals and their services at their fingertips.</p>
+                    <a href="#" class="a-link">
+                        <button class="know-button">Explore <img src="../images/search.png" class="button-image"></button>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-6 col-xs-12 col-sm-12">
+                <div class="col-12 right-side">
+                    <img src="../images/hero.jpg" class="controller-dark" alt="Dark Controller Image">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Second Part: Doctor-Patient Conferencing -->
+    <section class="container">
+        <h2 class="mb-4">Doctor-Patient Conferencing</h2>
+        <div class="flex-container">
+            <div class="flex-item">
+                <h3>Connect with Experts</h3>
+                <p>Connect with top-notch medical professionals through our state-of-the-art video conferencing platform. Schedule appointments, receive expert advice, and manage your health journey with ease.</p>
+            </div>
+            <div class="flex-item">
+                <img src="../images/conference.jpg" alt="Doctor Patient Conferencing Image">
+            </div>
+        </div>
+    </section>
+
+    <!-- Third Part: Health Monitoring -->
+    <section class="container">
+        <h2 class="mb-4">Health Monitoring</h2>
+        <div class="flex-container">
+            <div class="flex-item">
+                <h3>Empower Your Health</h3>
+                <p>Empower yourself with real-time health data. Our app allows you to monitor vital signs, track fitness metrics, and receive instant insights into your well-being. Take control and make informed decisions.</p>
+            </div>
+            <div class="flex-item">
+                <img src="../images/monitor.jpg" alt="Health Monitoring Image">
+            </div>
+        </div>
+    </section>
+
+    <!-- Fourth Part: Featured Resources -->
+    <section class="container">
+        <h2 class="mb-4">Featured Resources</h2>
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="../images/nutrition-card.jpg" class="card-img-top" alt="Resource 1 Image">
+                    <div class="card-body">
+                        <h5 class="card-title">Nutrition Guide</h5>
+                        <p class="card-text">Explore our comprehensive nutrition guide for a healthier lifestyle.</p>
+                        <a href="#" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="../images/fitness-card.jpg" class="card-img-top" alt="Resource 2 Image">
+                    <div class="card-body">
+                        <h5 class="card-title">Fitness Tips</h5>
+                        <p class="card-text">Discover effective fitness tips to stay active and improve your well-being.</p>
+                        <a href="#" class="btn btn-primary">Explore Tips</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="../images/mentalHelath-card.jpg" class="card-img-top" alt="Resource 3 Image">
+                    <div class="card-body">
+                        <h5 class="card-title">Mental Health</h5>
+                        <p class="card-text">Take care of your mental well-being with our mental health resources.</p>
+                        <a href="#" class="btn btn-primary">Discover More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Fifth Part: Additional Content -->
+    <section class="container">
+        <h2 class="mb-4">Additional Content</h2>
+        <p>This is another section of content that provides additional information or features. Feel free to customize and add more sections based on your needs.</p>
+        <!-- Add more content as needed -->
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
+
+
+  <%- include("partials/footer.ejs") %>
